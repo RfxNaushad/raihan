@@ -12,26 +12,26 @@ gsap.registerPlugin(ScrollTrigger);
 const testimonials = [
     {
         id: 1,
-        name: "Greg Weinstein",
+        name: "Skylar Crowde",
         role: "Ngeni Lab director",
         subRole: "Lead Developer",
-        quote: "Their approach made a real impact on our project. Highly recommend Mamunur!",
+        quote: "Raihan’s expertise turned our vision into a reality. Couldn’t have asked for more!",
         avatar: "/testimonial_avatar1.png",
     },
     {
         id: 2,
-        name: "Aaron Contreras",
+        name: "Alexander Arias",
         role: "Tech Innovators CEO",
         subRole: "Product Strategist",
-        quote: "Thanks to Mamunur, our project has reached new heights. An exceptional experience!",
+        quote: "Our project reached new heights with Raihan’s expertise. So grateful for his support!",
         avatar: "/testimonial_avatar2.png",
     },
     {
         id: 3,
-        name: "Ruben Decramer",
+        name: "Ron Philips",
         role: "StartUp Ventures Founder",
         subRole: "Software Architect",
-        quote: "The collaboration with Mamunur brought exceptional value to our project. Impressive work!",
+        quote: "Raihan was incredible to work with, delivering results beyond what we imagined.",
         avatar: "/testimonial_avatar3.png",
     },
 ];
