@@ -15,11 +15,11 @@ const TextReveal2 = ({quote}) => {
   function sliceTextByKeywords(text, keywords, keywords2, keywords3) {
     let selectedKeywords;
       // Check which keyword array to use based on the starting phrase of the text
-      if (text.includes("approach")) {
+      if (text.includes("our")) {
         selectedKeywords = keywords;
-    } else if (text.includes("Thanks")) {
+    } else if (text.includes("heights")) {
         selectedKeywords = keywords2;
-    } else if (text.includes("with")) {
+    } else if (text.includes("work")) {
         selectedKeywords = keywords3;
     } else {
         return [text];
@@ -46,9 +46,9 @@ const TextReveal2 = ({quote}) => {
 }
 
 
-const keywords = ["made", "our", "recommend"];
-const keywords2 =["our","reached","An"];
-const keywords3 =["with","exceptional","project."];
+const keywords = ["our", "Couldn’t", ""];
+const keywords2 =["heights","So",""];
+const keywords3 =["work","beyond",""];
 
 const lines = sliceTextByKeywords(quote, keywords, keywords2, keywords3);
 
