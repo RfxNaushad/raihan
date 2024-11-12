@@ -1,0 +1,15 @@
+.carousel-container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    transition: transform 0.3s ease;
+    transform: scale(0.8); /* Default scale for non-active cards */
+  }
+  
+  .carousel-item.active {
+    transform: scale(1.1); /* Scale up the center (active) card */
+  }
+  
