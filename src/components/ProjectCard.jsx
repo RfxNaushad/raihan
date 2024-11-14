@@ -3,7 +3,7 @@ import { ArrowUpRight, Github } from "lucide-react";
 import { useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { Link } from "react-router-dom";
+
 
 export default function ProjectCard({ project, isWide }) {
   const [hovered, setHovered] = useState(false);
@@ -64,7 +64,7 @@ export default function ProjectCard({ project, isWide }) {
     gsap.fromTo(
       cursorRef.current,
       { opacity: 0, scale: 0 }, // Initially hidden and scaled down
-      { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" } 
+      { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" } // Visible and smoothly scaling in
     );
   };
 
@@ -80,14 +80,12 @@ export default function ProjectCard({ project, isWide }) {
   };
 
   return (
-    <a
-      to={project.link} 
+    <div
+      // Link the cursor mask to the actual project URL
       ref={cardRef}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`flex relative flex-col z-20 justify-end cursor-pointer w-full h-[30.3rem] object-cover rounded-3xl overflow-hidden ${
-        isWide ? "col-auto md:col-span-7" : "col-auto md:col-span-5"
-      } bg-cover bg-no-repeat`}
+      className={`flex relative flex-col z-20 justify-end cursor-pointer w-full h-[30.3rem] object-cover rounded-3xl overflow-hidden ${isWide === 7 ? ' md:col-span-7' : ' md:col-span-5'} col-auto  bg-cover bg-no-repeat`}
       style={{ backgroundImage: `url(${project.image})` }}
     >
       <div className="flex items-center gap-4 p-6">
@@ -128,7 +126,7 @@ export default function ProjectCard({ project, isWide }) {
           View
         </span>
       </a>
-    </a>
+    </div>
   );
 }
 
