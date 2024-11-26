@@ -58,7 +58,7 @@ const Hero = () => {
                     </p>
                     {/* Download CV Button and Icons */}
                     <div className="flex items-center space-x-4 mb-6">
-                        <a href="/cv.pdf" download>
+                        <a href="/cv.pdf" download={'Raihan cv'}>
                         <Button text={'Download CV'} bg={'bg-[#00e676]'} icon={<FaDownload />} />
                         </a>
                         <a href="https://www.upwork.com/freelancers/~013cbd127b8d820d40" target='_blank'>
